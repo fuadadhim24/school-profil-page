@@ -15,115 +15,179 @@
     <!-- icons -->  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- style css -->
-     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- vendor files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-     <!-- vendor files -->
-     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- floating wa -->
-    <a href="https://wa.me/yourphonenumber" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/6287840199095" class="whatsapp-float" target="_blank">
         <i class="bi bi-whatsapp"></i>
     </a>
     <!-- end floating wa -->
-    <!-- section hero -->
-    <section id="hero">
-        <div class="hero-container">
-        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    <!-- header section -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    
+          <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <img src="assets/img/logo.png" alt="">
+            <!-- Uncomment the line below if you also wish to use an text logo -->
+            <!-- <h1 class="sitename">TheEvent</h1>  -->
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="#hero" class="active" >Home<br></a></li>
+              <li class="dropdown"><a href="#"><span>Tentang</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Sekolah</a></li>
+                  <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#">Visi Misi</a></li>
+                      <li><a href="#">Kepemimpinan Sekolah</a></li>
+                      <li><a href="#">Perlindungan Anak</a></li>
+                      <li><a href="#">Inklusi dan Diversitas</a></li>
+                      <li><a href="#">Bekerjasama</a></li>
+                      <li><a href="#">Berita dan Media</a></li>
+                    </ul>
+                  </li> -->
+                   <li><a href="#">Visi Misi</a></li>
+                    <li><a href="#">Kepemimpinan Sekolah</a></li>
+                    <li><a href="#">Perlindungan Anak</a></li>
+                    <li><a href="#">Inklusi dan Diversitas</a></li>
+                    <li><a href="#">Bekerjasama</a></li>
+                    <li><a href="#">Berita dan Media</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="#tentang">Tentang</a></li> -->
+              <li><a href="#pendaftaran">Pendaftaran</a></li>
+              <li><a href="#akademik">Akademik</a></li>
+              <li><a href="#aaa">Arts, Athletics & Activities</a></li>
+              <li><a href="#prestasi">Prestasi</a></li>
+              <li><a href="#hubungi">Hubungi Kami</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+          <a class="cta-btn d-none d-sm-block" href="#komunitas">Komunitas</a>
+    
+        </div>
+    </header>
+     <!-- end header section -->
+    <main class="main">
+        <!-- section hero -->
+        <section id="hero">
+            <div class="hero-container">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-            <div class="carousel-inner" role="listbox">
+                <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-            <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
-                <div class="carousel-container">
-                <div class="carousel-content">
-                    <div class="row animate__animated animate__fadeInUp justify-content-center">
-                        <div class="horizontal-line animate__animated animate__fadeInUp" style="max-width: 90%;"></div>
-                        <div class="col-lg-4">
-                            <h2>Temukan Bakat Anak <span>Anda</span></h2>
-                        </div>
-                        <div class="col-lg-5">
-                            <p>Cari bakat dan minat yang menjadikan mereka bernilai dan memiliki kepercayaan diri.</p>
-                        </div>
-                        <div class="col-lg-2">
-                            <p>Selengkapnya ></p>
-                        </div>
-                    </div>
-                    
-                    <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-                    <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a> -->
-                </div>
-                </div>
-            </div>
+                <div class="carousel-inner" role="listbox">
 
-            <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
-                <div class="carousel-container">
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+                    <div class="carousel-container">
                     <div class="carousel-content">
                         <div class="row animate__animated animate__fadeInUp justify-content-center">
-                            <div class="horizontal-line animate__animated animate__fadeInUp"></div>
+                            <div class="horizontal-line animate__animated animate__fadeInUp" style="max-width: 90%;"></div>
                             <div class="col-lg-4">
-                                <h2>Dimana mereka <span>Belajar</span></h2>
+                                <h2>Temukan Bakat Anak <span>Anda</span></h2>
                             </div>
                             <div class="col-lg-5">
-                                <p>Sekolah memiliki fasilitas lengkap yang bisa digunakan siswa dalam proses belajar mereka.</p>
+                                <p>Cari bakat dan minat yang menjadikan mereka bernilai dan memiliki kepercayaan diri.</p>
                             </div>
                             <div class="col-lg-2">
-                                <p>Selengkapnya ></p>
+                                <a href="">Selengkapnya ></a>
                             </div>
                         </div>
                         
                         <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
                         <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a> -->
                     </div>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
-                <div class="carousel-container">
-                    <div class="carousel-content">
-                        <div class="row animate__animated animate__fadeInUp justify-content-center">
-                            <div class="horizontal-line animate__animated animate__fadeInUp"></div>
-                            <div class="col-lg-4">
-                                <h2>Apa yang mereka <span>Pelajari</span></h2>
-                            </div>
-                            <div class="col-lg-5">
-                                <p>Mendorong motivasi siswa untuk berprestasi akademik dan non akademik .</p>
-                            </div>
-                            <div class="col-lg-2">
-                                <p>Selengkapnya ></p>
-                            </div>
-                        </div>
-                        
-                        <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-                        <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a> -->
                     </div>
                 </div>
-            </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <div class="row animate__animated animate__fadeInUp justify-content-center">
+                                <div class="horizontal-line animate__animated animate__fadeInUp"></div>
+                                <div class="col-lg-4">
+                                    <h2>Dimana mereka <span>Belajar</span></h2>
+                                </div>
+                                <div class="col-lg-5">
+                                    <p>Sekolah memiliki fasilitas lengkap bagi siswa dalam proses belajar mereka.</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="">Selengkapnya ></a>
+                                </div>
+                            </div>
+                            
+                            <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
+                            <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <div class="row animate__animated animate__fadeInUp justify-content-center">
+                                <div class="horizontal-line animate__animated animate__fadeInUp"></div>
+                                <div class="col-lg-4">
+                                    <h2>Motivasi siswa <span>Kuat</span></h2>
+                                </div>
+                                <div class="col-lg-5">
+                                    <p>Mendukung siswa untuk berprestasi akademik dan non akademik.</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="">Selengkapnya ></a>
+                                </div>
+                            </div>
+                            
+                            <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
+                            <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-double-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-double-right" aria-hidden="true"></span>
+                </a>
 
             </div>
+            </div>
+        </section>
+        <!-- End Hero -->
 
-            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-double-left" aria-hidden="true"></span>
-            </a>
-
-            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-double-right" aria-hidden="true"></span>
-            </a>
-
-        </div>
-        </div>
-    </section>
-  <!-- End Hero -->
+        <!-- section lulusan -->
+        <section id="lulusan">
+            <div class="container container-fluid container-xl position-relative align-items-center">
+                <h2>Kemana siswa SMA Nusantara</h2>
+                <p>82% siswa SMA Nusantara memilih melanjutkan kuliah setelah lulus. Siswa memiliki target memilih kampus yang tepat untuk mereka. Lulusan tersebar di berbagai kampus Indonesia dan luar negeri</p>
+                <a  href="" style="">Lihat daftar lulusan --></a>
+            </div>
+            
+        </section>
+        <!-- end lulusan -->
+    </main>
     
 
 
