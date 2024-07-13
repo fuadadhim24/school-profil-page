@@ -39,7 +39,7 @@
     <!-- end floating wa -->
 
     <!-- header section -->
-    <header id="header" class="header d-flex align-items-center fixed-top">
+    <header id="header" class="header d-flex align-items-center fixed-top active">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
     
           <a href="index.html" class="logo d-flex align-items-center me-auto">
@@ -181,6 +181,7 @@
         </section>
         <!-- End Hero -->
 
+        
         <!-- section lulusan -->
         <section id="lulusan">
             <div class="container container-fluid container-xl position-relative align-items-center">
@@ -188,74 +189,316 @@
                 <p class="animate__animated animate__fadeInLeft">82% siswa SMA Nusantara memilih melanjutkan kuliah setelah lulus. Siswa memiliki target memilih kampus yang tepat untuk mereka. Lulusan tersebar di berbagai kampus Indonesia dan luar negeri</p>
                 <a  href="" class="animate__animated animate__fadeInUp">Lihat daftar lulusan --></a>
             </div>
-            
         </section>
         <!-- end lulusan -->
+
+         <!-- horizontal infinte section -->
+        <section id="gallery" class="gallery section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+              <!-- <h2>Gallery</h2> -->
+              <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+            </div><!-- End Section Title -->
+      
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+              <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 2000
+                    },
+                    "slidesPerView": "auto",
+                    "centeredSlides": true,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    },
+                    "breakpoints": {
+                      "320": {
+                        "slidesPerView": 1,
+                        "spaceBetween": 0
+                      },
+                      "768": {
+                        "slidesPerView": 3,
+                        "spaceBetween": 20
+                      },
+                      "1200": {
+                        "slidesPerView": 5,
+                        "spaceBetween": 20
+                      }
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper align-items-center ">
+                  <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\landingpage\ui.jpg"><img src="assets/img/landingpage/polije.png" class="img-fluid" alt=""></a></div>
+                  <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\landingpage\ui.jpg"><img src="assets/img/landingpage/unesa.jpg" class="img-fluid" alt=""></a></div>
+                  <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\landingpage\ui.jpg"><img src="assets/img/landingpage/nus.png" class="img-fluid" alt=""></a></div>
+                  <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\landingpage\ui.jpg"><img src="assets/img/landingpage/pens.jpg" class="img-fluid" alt=""></a></div>
+                  <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\landingpage\ui.jpg"><img src="assets/img/landingpage/um.jpg" class="img-fluid" alt=""></a></div>
+                  <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\landingpage\nus.png"><img src="assets/img/landingpage/nus.png" class="img-fluid" alt=""></a></div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+      
+            </div>
+      
+        </section>
+         <!-- end horizontal infinite -->
+          
          <!-- about Section -->
         <section id="about" class="about section">
+            <div class="container">
+    
+            <ul class="nav nav-tabs justify-content-start" role="tablist" data-aos="fade-up" data-aos-delay="100">
+                <li class="nav-item">
+                <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Pendaftaran</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Akademik</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Layanan</a>
+                </li>
+            </ul>
+            <!-- Section Title -->
+            <div class="container section-title">
+                <h2 data-aos="fade-up" data-aos-delay="100" >Mengenal SMA Nusantara<br></h2>
+                <p data-aos="fade-up" data-aos-delay="100" >Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div><!-- End Section Title -->
+            <div class="horizontal-line animate__animated animate__fadeInUp"></div>
+            
+            <!-- card hover section -->
+            <div class="tab-content row justify-content-end" data-aos="fade-up" data-aos-delay="200">
 
-  
-        <div class="container">
-  
-          <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-            <li class="nav-item">
-              <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Pendaftaran</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Akademik</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Komunitas</a>
-            </li>
-          </ul>
-          <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Mengenal SMA Nusantara<br></h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
-        <div class="horizontal-line animate__animated animate__fadeInUp"></div>
-        
-        <!-- card hover section -->
-        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-            <!-- <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius necessitatibus voluptatem quis labore perspiciatis quia.</h3> -->
-  
-            <!-- tab 1 -->
-            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-  
-                <div class="row justify-content-center">
-                    <div class="card" tabindex="0">
-                        <img src="assets\img\landingpage\bangunan.jpg" alt="A City skyline at sunset">
-                        <div class="text">
-                          <h2 data-splitting="">Kunjungi Kami</h2>
-                          <p data-splitting="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                <!-- <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius necessitatibus voluptatem quis labore perspiciatis quia.</h3> -->
+    
+                <!-- tab 1 -->
+                <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                    <div class="row justify-content-center">
+                        <div class="card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="0" tabindex="0">
+                            <img src="assets\img\landingpage\bangunan.jpg" alt="A City skyline at sunset">
+                            <div class="text">
+                            <h2 data-splitting="">Kunjungi Kami</h2>
+                            <p data-splitting="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                            <a data-splitting="" href="#" >detail →</a>
+                            </div>
                         </div>
-                    </div>
-                
-                    <div class="card" tabindex="0">
-                        <img src="assets\img\landingpage\agustusan.jpg" alt="A Beach with sunset">
-                        <div class="text">
-                            <h2 data-splitting="">Tahapan PPDB</h2>
-                            <p data-splitting="">Quasi non molestias odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                    
+                        <div class="card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="200" tabindex="0">
+                            <img src="assets\img\landingpage\agustusan.jpg" alt="A Beach with sunset">
+                            <div class="text">
+                                <h2 data-splitting="">Tahapan PPDB</h2>
+                                <p data-splitting="">Quasi non molestias odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                                <a data-splitting="" href="#">detail →</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card" tabindex="0">
-                        <img src="assets\img\landingpage\lapangan olahraga.jpg" alt="A Beach with sunset">
-                        <div class="text">
-                            <h2 data-splitting="">Kata Mereka</h2>
-                            <p data-splitting="">Quasi non molestias odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                        <div class="card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="400"  tabindex="0">
+                            <img src="assets\img\landingpage\lapangan olahraga.jpg" alt="A Beach with sunset">
+                            <div class="text">
+                                <h2 data-splitting="">Kata Mereka</h2>
+                                <p data-splitting="">Quasi non molestias odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                                <a data-splitting="" href="#">detail →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- End tab 1 -->
-  
-          </div>
-        <!-- end card hover -->
-  
-  
-        </div>
+                <!-- End tab 1 -->
+    
+                <!-- tab 2 -->
+                <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
+    
+                    <div class="row justify-content-center">
+                        <div class="card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="0" tabindex="0">
+                            <img src="assets/img/landingpage/belajar.jpg" alt="A City skyline at sunset">
+                            <div class="text">
+                            <h2 data-splitting="">Kalender</h2>
+                            <p data-splitting="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                            <a data-splitting="" href="#" >detail →</a>
+                            </div>
+                        </div>
+                    
+                        <div class="card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="0" tabindex="0">
+                            <img src="assets\img\landingpage/guru.jpg" alt="A Beach with sunset">
+                            <div class="text">
+                                <h2 data-splitting="">Kurikulum</h2>
+                                <p data-splitting="">Quasi non molestias odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                                <a data-splitting="" href="#">detail →</a>
+                            </div>
+                        </div>
+                        <div class="card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="400" tabindex="0">
+                            <img src="assets/img/landingpage/lapangan.jpg" alt="A Beach with sunset">
+                            <div class="text">
+                                <h2 data-splitting="">Fasilitas</h2>
+                                <p data-splitting="">Quasi non molestias odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                                <a data-splitting="" href="#">detail →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End tab 2 -->
+    
+                <!-- tab 3 -->
+                <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-3">
+    
+                    <div class="row justify-content-center">
+                        <div class="card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="0" tabindex="0">
+                            <img src="assets\img\landingpage/pramuka.jpg" alt="A City skyline at sunset">
+                            <div class="text">
+                            <h2 data-splitting="">Data Terpadu</h2>
+                            <p data-splitting="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                            <a data-splitting="" href="#" >detail →</a>
+                            </div>
+                        </div>
+                    
+                        <div class="card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="200" tabindex="0">
+                            <img src="assets\img\landingpage/belajar.jpg" alt="A Beach with sunset">
+                            <div class="text">
+                                <h2 data-splitting="">Bimbingan Konseling</h2>
+                                <p data-splitting="">Quasi non molestias odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                                <a data-splitting="" href="#">detail →</a>
+                            </div>
+                        </div>
+                        <div class="card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="400" tabindex="0">
+                            <img src="assets\img\landingpage/lapangan tenis.jpg" alt="A Beach with sunset">
+                            <div class="text">
+                                <h2 data-splitting="">Lawan Kekerasan</h2>
+                                <p data-splitting="">Quasi non molestias odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi nostrum necessitatibus doloremque? Quasi non molestias odio.</p>
+                                <a data-splitting="" href="#">detail →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End tab 3 -->
+    
+            </div>
+            <!-- end card hover -->
+
+            </div>
         </section>
-        <!-- /about Section -->
+        <!-- end about-->
+        
+
+        <!-- ======= start box Section ======= -->
+        <section class="info-box py-0">
+            <div class="container-fluid">
+    
+            <div class="row">
+    
+                <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+    
+                <div class="content">
+                    <h3>Aan Marlinah, S.E., M.Ak.<br><strong>Kepala Sekolah</strong></h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                    </p>
+                </div>
+    
+                <div class="accordion-list">
+                    <ul>
+                    <li>
+                        <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>Selamat datang</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                        <p>
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        </p>
+                        </div>
+                    </li>
+    
+                    </ul>
+                </div>
+    
+                </div>
+    
+                <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style="background-image: url(assets/img/landingpage/dosen.jpg);">&nbsp;</div>
+            </div>
+    
+            </div>
+        </section>
+        <!-- End Box Section -->
+
+        <!-- section faq -->
+        <section id="faq" class="faq section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Pertanyaan yang sering ditanyakan</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div><!-- End Section Title -->
+    
+            <div class="container">
+    
+            <div class="row justify-content-center">
+    
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+    
+                <div class="faq-container">
+    
+                    <div class="faq-item faq-active">
+                    <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                    <div class="faq-content">
+                        <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+    
+                    <div class="faq-item">
+                    <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                    <div class="faq-content">
+                        <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+    
+                    <div class="faq-item">
+                    <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                    <div class="faq-content">
+                        <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+    
+                    <div class="faq-item">
+                    <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                    <div class="faq-content">
+                        <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+    
+                    <div class="faq-item">
+                    <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                    <div class="faq-content">
+                        <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+    
+                    <div class="faq-item">
+                    <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                    <div class="faq-content">
+                        <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+    
+                </div>
+    
+                </div><!-- End Faq Column-->
+    
+            </div>
+    
+            </div>
+  
+        </section>
+        <!-- end faq -->
+
+
+        
     </main>
     
 
@@ -274,5 +517,8 @@
   
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- vendor js -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
