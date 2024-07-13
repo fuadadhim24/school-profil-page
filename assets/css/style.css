@@ -706,6 +706,7 @@ h6 {
 
 .about .tab-pane {
   transition: ease-in-out 0.2s;
+  width: fit-content;
 }
 
 .about .about-item {
@@ -950,6 +951,7 @@ logo section
 
 .gallery .container{
   margin-top: 20px;
+  width: 100%;
 }
 .gallery .swiper-wrapper {
   height: auto;
