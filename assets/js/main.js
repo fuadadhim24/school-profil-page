@@ -228,4 +228,11 @@
    */
   new PureCounter();
 
+  // card section
+  Splitting();
+
+  setTimeout(() => {
+    document.querySelector(".card").focus();
+  },1500);
+
 })();
