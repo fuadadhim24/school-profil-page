@@ -1011,7 +1011,7 @@ logo section
 }
 .gallery img{
  background-size: cover; 
- height: 15vh;
+ height: 20vh;
 }
 
 
@@ -1896,15 +1896,21 @@ identitas-sekolah-box {
 .ruang-lain .row {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Untuk memastikan item di dalam row dapat wrap ketika layar lebih kecil */
-  gap: 20px; /* Jarak antar item */
+  flex-wrap: wrap; 
+  /* gap: 20px; */
 }
 
 .ruang-lain .member {
   text-align: center;
   position: relative;
   overflow: hidden;
-  width: 100%; /* Membuat setiap member memenuhi lebar yang tersedia */
+  width: 100%; 
+}
+
+.ruang-lain .member img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
 }
 
 .ruang-lain .member .member-info {
@@ -1913,7 +1919,7 @@ identitas-sekolah-box {
   inset: auto 0 -44px 0;
   background: rgba(0, 0, 0, 0.6);
   transition: 0.4s;
-  width: 100%; /* Membuat info content memenuhi lebar member */
+  width: 100%;
 }
 
 .ruang-lain .member .member-info-content h4 {
@@ -1934,6 +1940,7 @@ identitas-sekolah-box {
 .ruang-lain .member .member-info-content span {
   font-style: italic;
   display: block;
+  color: var(--contrast-color);
   font-size: 13px;
 }
 
@@ -1960,4 +1967,281 @@ identitas-sekolah-box {
 
 .ruang-lain .member:hover .member-info {
   bottom: 0;
+}
+/*--------------------------------------------------------------
+# activity Section
+--------------------------------------------------------------*/
+.activity .container-fluid {
+  margin-bottom: 3px;
+}
+
+.activity .activity-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+.activity .activity-info {
+  background: url("../img/landingpage/lapangan\ upacara.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.activity .activity-info:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.activity .activity-info h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--contrast-color);
+}
+
+@media (max-width: 574px) {
+  .activity .activity-info h3 {
+    font-size: 24px;
+  }
+}
+
+.activity .activity-info p {
+  color: var(--contrast-color);
+  margin-bottom: 0;
+}
+
+.activity .activity-gallery-container {
+  padding-right: 12px;
+}
+
+.activity .activity-gallery {
+  overflow: hidden;
+  display: block;
+  border-right: 3px solid var(--background-color);
+  border-bottom: 3px solid var(--background-color);
+  position: relative; 
+  height: 200px;
+}
+
+.activity .activity-gallery img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  transition: all ease-in-out 0.4s;
+}
+
+.activity .activity-gallery:hover img {
+  transform: scale(1.1); 
+}
+
+
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  --background-color: #0e1b4d;
+  --heading-color: var(--contrast-color);
+  --default-color: var(--contrast-color);
+  color: var(--default-color);
+  background-color: var(--background-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 160px 0 80px 0;
+  text-align: center;
+  position: relative;
+}
+
+.page-title:before {
+  content: "";
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  position: absolute;
+  inset: 0;
+}
+
+.page-title h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.page-title .breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+/*--------------------------------------------------------------
+# visi-misi Section
+--------------------------------------------------------------*/
+.visi-misi .details h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.visi-misi .details .social {
+  margin-bottom: 15px;
+}
+
+.visi-misi .details .social a {
+  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  color: color-mix(in srgb, #2f3138, transparent 30%);
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visi-misi .details .social a:hover {
+  background: var(--accent-color);
+  color: #2f3138;
+}
+
+.visi-misi .details .social a i {
+  font-size: 16px;
+  line-height: 0;
+}
+
+.visi-misi .details p {
+  color: color-mix(in srgb, #2f3138, transparent 30%);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+/*--------------------------------------------------------------
+# Ekstrakulikuler Section
+--------------------------------------------------------------*/
+.ekstrakulikuler .pricing-item {
+  background-color: var(--surface-color);
+  box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.ekstrakulikuler .pricing-item h3 {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.ekstrakulikuler .pricing-item h4 {
+  font-size: 48px;
+  color: var(--accent-color);
+  font-weight: 400;
+  font-family: var(--heading-font);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.ekstrakulikuler .pricing-item h4 sup {
+  font-size: 28px;
+}
+
+.ekstrakulikuler .pricing-item h4 span {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  font-size: 18px;
+}
+
+.ekstrakulikuler .pricing-item ul {
+  padding: 20px 0;
+  list-style: none;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  text-align: left;
+  line-height: 20px;
+}
+
+.ekstrakulikuler .pricing-item ul li {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.ekstrakulikuler .pricing-item ul i {
+  color: #059652;
+  font-size: 24px;
+  padding-right: 3px;
+}
+
+.ekstrakulikuler .pricing-item ul .na {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.ekstrakulikuler .pricing-item ul .na i {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.ekstrakulikuler .pricing-item ul .na span {
+  text-decoration: line-through;
+}
+
+.ekstrakulikuler .buy-btn {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 4px;
+  transition: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  font-family: var(--heading-font);
+}
+
+.ekstrakulikuler .buy-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.ekstrakulikuler .featured {
+  background: var(--accent-color);
+}
+
+.ekstrakulikuler .featured h3,
+.ekstrakulikuler .featured h4,
+.ekstrakulikuler .featured h4 span,
+.ekstrakulikuler .featured ul,
+.ekstrakulikuler .featured ul .na,
+.ekstrakulikuler .featured ul i,
+.ekstrakulikuler .featured ul .na i {
+  color: var(--contrast-color);
+}
+
+.ekstrakulikuler .featured .buy-btn {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--contrast-color);
+}
+
+.ekstrakulikuler .featured .buy-btn:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+  color: var(--contrast-color);
 }
